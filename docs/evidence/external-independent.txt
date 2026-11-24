@@ -1,0 +1,14 @@
+External client: separate Debian x86_64 computer, outside the Raspberry Pi.
+Command: curl --silent --show-error --include --connect-timeout 5 --max-time 15 --retry 2 --retry-all-errors https://bin-consequently-novelty-weapon.trycloudflare.com/health
+Exit: 0
+HTTP/2 200 
+date: Tue, 24 Nov 2026 10:36:59 GMT
+content-type: text/plain
+content-length: 3
+cf-ray: a5f7c6970e82c921-ICN
+cf-cache-status: DYNAMIC
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+OK

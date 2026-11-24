@@ -1,0 +1,47 @@
+Time: 2026-11-24T10:33:30+00:00
+$ curl --noproxy '*' --silent --show-error --include --connect-timeout 5 --max-time 12 --retry 2 --retry-all-errors --retry-delay 1 --retry-max-time 35 --write-out '
+LAB_STATUS=%{http_code}
+' https://bin-consequently-novelty-weapon.trycloudflare.com/
+Exit: 0
+HTTP/2 200 
+date: Tue, 24 Nov 2026 10:33:30 GMT
+content-type: text/html
+cf-ray: a5f7c17fad808c03-ICN
+cf-cache-status: DYNAMIC
+accept-ranges: bytes
+last-modified: Tue, 24 Nov 2026 10:28:34 GMT
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello Pi - B3-1</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eef2f6;color:#142b40;font:18px/1.7 system-ui,sans-serif}
+main{max-width:840px;margin:9vh auto;padding:56px;background:#fff;border:1px solid #d4dfe8;border-radius:22px}
+.eyebrow{font-size:13px;color:#396b70;letter-spacing:.15em}h1{font-size:72px;line-height:1.1;margin:24px 0}
+.intro{font-size:22px;max-width:640px}.status{display:inline-block;background:#e7f5ec;color:#205f39;padding:6px 14px;border-radius:24px;font-size:14px}
+dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px;padding:24px 0;border-top:1px solid #dce4ec;border-bottom:1px solid #dce4ec}
+dt{color:#627685}dd{margin:0}a{color:#155b8e}code{font:15px/1.5 monospace;background:#f0f4f7;padding:4px 8px;border-radius:6px}
+footer{font-size:13px;color:#627685;margin-top:28px}
+@media(max-width:900px){main{margin:24px;padding:30px}h1{font-size:54px}dl{grid-template-columns:80px 1fr}}
+</style>
+<main>
+  <span class="eyebrow">B3-1 · CLOUD NETWORK &amp; SERVER</span>
+  <h1>Hello Pi.</h1>
+  <p class="intro">라즈베리 파이에서 만든 웹 서비스가<br>인터넷의 요청에 응답합니다.</p>
+  <p class="status">Nginx is running</p>
+  <dl>
+    <dt>서버</dt><dd>Raspberry Pi 5 · Debian · ARM64</dd>
+    <dt>실행</dt><dd>Docker · Nginx · 일반 사용자 UID 101</dd>
+    <dt>네트워크</dt><dd>전용 Bridge Subnet · HTTPS Tunnel</dd>
+    <dt>상태 확인</dt><dd><a href="/health"><code>GET /health → 200 OK</code></a></dd>
+  </dl>
+  <footer>요청 흐름: Internet → Cloudflare HTTPS → Tunnel → Pi → Nginx</footer>
+</main>
+</html>
+
+LAB_STATUS=200

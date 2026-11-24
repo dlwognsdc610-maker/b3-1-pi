@@ -1,0 +1,5 @@
+Time: 2026-11-24T11:20:57+00:00
+/usr/sbin/iptables filter: removed 5 lab engine rules and 6 empty chains
+/usr/sbin/iptables nat: removed 2 lab engine rules and 1 empty chains
+/usr/sbin/ip6tables filter: removed 5 lab engine rules and 6 empty chains
+/usr/sbin/ip6tables nat: removed 2 lab engine rules and 1 empty chains

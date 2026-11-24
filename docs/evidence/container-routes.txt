@@ -1,0 +1,8 @@
+Time: 2026-11-24T10:33:31+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock exec codyssey-b3-1-web sh -ec 'ip route; cat /proc/net/route'
+Exit: 0
+default via 10.31.0.1 dev eth0 
+10.31.0.0/24 dev eth0 scope link  src 10.31.0.10 
+Iface	Destination	Gateway 	Flags	RefCnt	Use	Metric	Mask		MTU	Window	IRTT                                                       
+eth0	00000000	01001F0A	0003	0	0	0	00000000	0	0	0                                                                               
+eth0	00001F0A	00000000	0001	0	0	0	00FFFFFF	0	0	0                                                                               

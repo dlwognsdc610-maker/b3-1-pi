@@ -1,0 +1,18 @@
+Time: 2026-11-24T11:06:55+00:00
+$ curl --noproxy '*' --silent --show-error --include --connect-timeout 5 --max-time 12 --retry 2 --retry-all-errors --retry-delay 1 --retry-max-time 35 --write-out '
+LAB_STATUS=%{http_code}
+' https://bin-consequently-novelty-weapon.trycloudflare.com/health
+Exit: 0
+HTTP/2 200 
+date: Tue, 24 Nov 2026 11:06:55 GMT
+content-type: text/plain
+content-length: 3
+cf-ray: a5f7f26a5eb4a74c-ICN
+cf-cache-status: DYNAMIC
+server: cloudflare
+x-robots-tag: none
+x-robots-tag: none
+
+OK
+
+LAB_STATUS=200

@@ -1,0 +1,11 @@
+{
+  "checked_at": "2026-11-24T11:20:59+00:00",
+  "errors": [],
+  "engine_active": false,
+  "tunnel_active": false,
+  "socket_exists": false,
+  "lab_route_exists": false,
+  "docker_data_exists": false,
+  "docker_firewall_chains_removed": true,
+  "cloud_resources_created": false
+}

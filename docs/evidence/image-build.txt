@@ -1,0 +1,81 @@
+Time: 2026-11-24T10:29:55+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock build --network=host --label=codyssey.lab=b3-1 --tag=codyssey-b3-1:1.0 /home/ljh/self-os/Codyssey/b3-1-pi
+Exit: 0
+Sending build context to Docker daemon   7.68kB
+
+Step 1/9 : FROM nginx:stable-alpine
+stable-alpine: Pulling from library/nginx
+b90627b8f429: Pulling fs layer
+035563a816bc: Pulling fs layer
+8b7018871fc0: Pulling fs layer
+80be1286becf: Pulling fs layer
+fb5b8b427747: Pulling fs layer
+b7b7681a13d1: Pulling fs layer
+1fe4c01dbbfe: Pulling fs layer
+80be1286becf: Waiting
+93643a29ec78: Pulling fs layer
+fb5b8b427747: Waiting
+b7b7681a13d1: Waiting
+1fe4c01dbbfe: Waiting
+93643a29ec78: Waiting
+8b7018871fc0: Download complete
+80be1286becf: Verifying Checksum
+80be1286becf: Download complete
+fb5b8b427747: Verifying Checksum
+fb5b8b427747: Download complete
+b7b7681a13d1: Verifying Checksum
+b7b7681a13d1: Download complete
+1fe4c01dbbfe: Verifying Checksum
+1fe4c01dbbfe: Download complete
+b90627b8f429: Verifying Checksum
+b90627b8f429: Download complete
+b90627b8f429: Pull complete
+035563a816bc: Verifying Checksum
+035563a816bc: Download complete
+035563a816bc: Pull complete
+8b7018871fc0: Pull complete
+80be1286becf: Pull complete
+fb5b8b427747: Pull complete
+b7b7681a13d1: Pull complete
+1fe4c01dbbfe: Pull complete
+93643a29ec78: Verifying Checksum
+93643a29ec78: Download complete
+93643a29ec78: Pull complete
+Digest: sha256:8eb2b5540eae779603cc3db84b3986a15ecb5308b54303146eee9837c137b51a
+Status: Downloaded newer image for nginx:stable-alpine
+ ---> 1d470c503b92
+Step 2/9 : RUN apk add --no-cache curl
+ ---> Running in e327b18ca5a4
+OK: 58.7 MiB in 71 packages
+ ---> Removed intermediate container e327b18ca5a4
+ ---> 25455b4d6bb9
+Step 3/9 : COPY nginx.conf /etc/nginx/nginx.conf
+ ---> 3e15d0fb2012
+Step 4/9 : COPY site/ /usr/share/nginx/html/
+ ---> b4d2d71f1310
+Step 5/9 : USER 101:101
+ ---> Running in d44cb3c1f847
+ ---> Removed intermediate container d44cb3c1f847
+ ---> 4d58888f2e90
+Step 6/9 : EXPOSE 8080
+ ---> Running in 64af779f83c8
+ ---> Removed intermediate container 64af779f83c8
+ ---> 699970a2bed2
+Step 7/9 : ENTRYPOINT ["nginx"]
+ ---> Running in 4505afc52021
+ ---> Removed intermediate container 4505afc52021
+ ---> 27efc1e71443
+Step 8/9 : CMD ["-g", "daemon off;"]
+ ---> Running in c59bd4edd963
+ ---> Removed intermediate container c59bd4edd963
+ ---> 25457d0578cd
+Step 9/9 : LABEL codyssey.lab=b3-1
+ ---> Running in a19124669f1e
+ ---> Removed intermediate container a19124669f1e
+ ---> 01a996b7f402
+Successfully built 01a996b7f402
+Successfully tagged codyssey-b3-1:1.0
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            BuildKit is currently disabled; enable it by removing the DOCKER_BUILDKIT=0
+            environment-variable.
+

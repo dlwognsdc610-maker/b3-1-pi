@@ -1,0 +1,7 @@
+Time: 2026-11-24T10:33:31+00:00
+$ sh -c 'printf '"'"'SSH client and server: %s\n'"'"' "$SSH_CONNECTION"; id; hostname; uname -m'
+Exit: 0
+SSH client and server: 100.127.183.105 37726 100.84.209.10 22
+uid=1000(ljh) gid=1000(ljh) groups=1000(ljh),4(adm),20(dialout),24(cdrom),27(sudo),29(audio),44(video),46(plugdev),60(games),100(users),102(netdev),986(gpio),988(i2c),989(spi),992(render),996(input)
+rpi5
+aarch64

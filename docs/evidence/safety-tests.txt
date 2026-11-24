@@ -1,0 +1,12 @@
+Removing only this lab's services and resources
+Reproducing a stopped web server, then restoring it
+test_capture_refuses_to_present_old_results_as_live (test_lab.CleanupSafety.test_capture_refuses_to_present_old_results_as_live) ... ok
+test_cleanup_refuses_a_foreign_container (test_lab.CleanupSafety.test_cleanup_refuses_a_foreign_container) ... ok
+test_cleanup_without_owned_state_does_not_touch_host (test_lab.CleanupSafety.test_cleanup_without_owned_state_does_not_touch_host) ... ok
+test_controlled_failure_always_restarts_web_server (test_lab.CleanupSafety.test_controlled_failure_always_restarts_web_server) ... ok
+test_firewall_cleanup_preserves_unexpected_docker_rules (test_lab.CleanupSafety.test_firewall_cleanup_preserves_unexpected_docker_rules) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.003s
+
+OK

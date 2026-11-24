@@ -1,0 +1,23 @@
+{
+  "docker": {
+    "version": "29.10.0",
+    "url": "https://download.docker.com/linux/static/stable/aarch64/docker-29.10.0.tgz",
+    "sha256": "6e5159e8b5615e0c0c2954a2a1a2a12bc65f5d9b603595dba24a10cb367408cd"
+  },
+  "cloudflared": {
+    "version": "2026.11.2",
+    "url": "https://github.com/cloudflare/cloudflared/releases/download/2026.11.2/cloudflared-linux-arm64",
+    "sha256": "04a7b7f08bce85d56b26ffe1fdbfbb21a074495a363d16f0783c40e25b5c5281"
+  },
+  "chromium_headless": [
+    {
+      "package": "chromium-common_156.0.8078.108-1~deb13u1_arm64.deb",
+      "sha256": "aec987983ce51ba53808558afd403cd5667b3ca5742f387314cfcf5b8447c2e7"
+    },
+    {
+      "package": "chromium-headless-shell_156.0.8078.108-1~deb13u1_arm64.deb",
+      "sha256": "d90f9f20da24c50caca1d7efefbf18760fbbd736548b69ab0c7f726b49309c3f"
+    }
+  ],
+  "nginx_base_image": "nginx@sha256:8eb2b5540eae779603cc3db84b3986a15ecb5308b54303146eee9837c137b51a"
+}

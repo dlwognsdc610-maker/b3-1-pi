@@ -1,0 +1,237 @@
+Time: 2026-11-24T10:33:30+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock inspect codyssey-b3-1-web
+Exit: 0
+[
+    {
+        "Id": "79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91",
+        "Created": "2026-11-24T10:29:55.738295086Z",
+        "Path": "nginx",
+        "Args": [
+            "-g",
+            "daemon off;"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 103953,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-11-24T10:33:28.175063405Z",
+            "FinishedAt": "2026-11-24T10:33:25.058663651Z"
+        },
+        "Image": "sha256:01a996b7f40276a074c59c62baeba91547d0d04da08b96dd2e4ed1e0e818e519",
+        "ResolvConfPath": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/containers/79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91/resolv.conf",
+        "HostnamePath": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/containers/79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91/hostname",
+        "HostsPath": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/containers/79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91/hosts",
+        "LogPath": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/containers/79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91/79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91-json.log",
+        "Name": "/codyssey-b3-1-web",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {
+                    "max-file": "2",
+                    "max-size": "2m"
+                }
+            },
+            "NetworkMode": "codyssey-b3-1-net",
+            "PortBindings": {
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "18081"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "unless-stopped",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": [
+                "ALL"
+            ],
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": true,
+            "SecurityOpt": [
+                "no-new-privileges"
+            ],
+            "Tmpfs": {
+                "/tmp": "rw,noexec,nosuid,size=16m"
+            },
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 500000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": -1,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": 64,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91",
+                "LowerDir": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/eb99f402c14141dad106822c952050ee111b9c346c59d0d615412850fd37a881-init/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/be496152d85db9983297446566a5acd150a4c71d52644892254e7336822a14ef/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/5309e4cc83f361f3d87bc1813369fefdd3bc518af9a8aa917b170e47eb18cf19/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/9ae0a3bb0da651d442b868e80933e3f737a57d11a1fbca52d4d5de2dd427116e/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/2fd1e5162c3838dbd8ee35816fbade931fb5c5268783acd84e03def5b541c82b/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/216c9ef0a588961601f773171ebccb11597f7704f0d94c6c59cb438c45e3bf4a/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/da8639df3dbd7bf34dabd4a7511da2dc45dfb360a22a87e0d7374e1d7b8cf6b4/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/dae675b4b1a76cf0d940b2288f185b59689a4eea153a6a05e6167f764fafd615/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/9d8d1983ea59339d8b25bf93899bd65490e28b9403458ffe711e47c4aba07316/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/c09b466fbd0b876668f64009b188211bab0246237ed210760f94170069df0a40/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/938f85835b2455d369fac84ce83aa288157531bcbd50918c0e1b3f259eb71403/diff:/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/981e58cccb0c8977abcea9dd1af89169efc960ba33d36bda3a29d2826e494a63/diff",
+                "MergedDir": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/eb99f402c14141dad106822c952050ee111b9c346c59d0d615412850fd37a881/merged",
+                "UpperDir": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/eb99f402c14141dad106822c952050ee111b9c346c59d0d615412850fd37a881/diff",
+                "WorkDir": "/home/ljh/self-os/Codyssey/b3-1-pi/.runtime/docker/overlay2/eb99f402c14141dad106822c952050ee111b9c346c59d0d615412850fd37a881/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [],
+        "Config": {
+            "Hostname": "79b237028bcb",
+            "Domainname": "",
+            "User": "101:101",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {},
+                "8080/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.30.8",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=1.0.2",
+                "NJS_RELEASE=1",
+                "ACME_VERSION=0.4.2"
+            ],
+            "Cmd": [
+                "-g",
+                "daemon off;"
+            ],
+            "Image": "codyssey-b3-1:1.0",
+            "Volumes": null,
+            "WorkingDir": "/",
+            "Entrypoint": [
+                "nginx"
+            ],
+            "Labels": {
+                "codyssey.lab": "b3-1",
+                "maintainer": "NGINX Docker Maintainers <docker-maint@nginx.com>"
+            },
+            "StopSignal": "SIGQUIT"
+        },
+        "NetworkSettings": {
+            "SandboxID": "5c0a4386cbe7d94fc3e5dc102252f95e0e22a028545ffcd58ef535c28c071b41",
+            "SandboxKey": "/run/codyssey-b3-1/exec/netns/5c0a4386cbe7",
+            "Ports": {
+                "80/tcp": null,
+                "8080/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "18081"
+                    }
+                ]
+            },
+            "Networks": {
+                "codyssey-b3-1-net": {
+                    "IPAMConfig": {
+                        "IPv4Address": "10.31.0.10"
+                    },
+                    "Links": null,
+                    "Aliases": null,
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "90dde23781d9dc35be1b3e130846124afcc711142c1dcb65fea7b822878f5c9c",
+                    "EndpointID": "70677525416c271156424ebebc1e4a68ae31df903fac03afedbba314e583c442",
+                    "Gateway": "10.31.0.1",
+                    "IPAddress": "10.31.0.10",
+                    "MacAddress": "ca:31:e3:04:20:7e",
+                    "IPPrefixLen": 24,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "codyssey-b3-1-web",
+                        "79b237028bcb"
+                    ]
+                }
+            }
+        }
+    }
+]

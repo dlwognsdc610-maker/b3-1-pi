@@ -1,0 +1,17 @@
+Time: 2026-11-24T10:33:31+00:00
+$ sudo -n /usr/sbin/nft list table inet b3_1_lab
+Exit: 0
+table inet b3_1_lab {
+	chain input {
+		type filter hook input priority filter - 10; policy accept;
+		tcp dport 22 ip saddr { 100.81.178.62, 100.84.204.7, 100.86.99.100, 100.93.30.91, 100.93.160.10, 100.93.169.125, 100.102.91.28, 100.108.236.30, 100.114.37.96, 100.114.120.115, 100.116.185.81, 100.127.69.107, 100.127.183.105, 127.0.0.1, 192.168.200.0/24 } accept
+		iifname "tailscale0" tcp dport 22 ip6 saddr fd7a:115c:a1e0::/48 accept
+		iifname "lo" tcp dport 22 accept
+		tcp dport 22 drop
+	}
+
+	chain forward {
+		type filter hook forward priority filter - 10; policy accept;
+		iifname != "br-b3-1" ip daddr 10.31.0.10 tcp dport 8080 drop
+	}
+}

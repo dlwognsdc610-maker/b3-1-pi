@@ -1,0 +1,10 @@
+Time: 2026-11-24T10:33:27+00:00
+$ curl --noproxy '*' --silent --show-error --include --connect-timeout 5 --max-time 12 --retry 2 --retry-all-errors --retry-delay 1 --retry-max-time 35 --write-out '
+LAB_STATUS=%{http_code}
+' http://127.0.0.1:18081/health
+Exit: 7
+
+LAB_STATUS=000
+curl: (7) Failed to connect to 127.0.0.1 port 18081 after 0 ms: Could not connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 18081 after 0 ms: Could not connect to server
+curl: (7) Failed to connect to 127.0.0.1 port 18081 after 0 ms: Could not connect to server

@@ -1,0 +1,5 @@
+Time: 2026-11-24T10:33:28+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock ps --all --filter=name=codyssey-b3-1-web
+Exit: 0
+CONTAINER ID   IMAGE               COMMAND                  CREATED         STATUS                     PORTS     NAMES
+79b237028bcb   codyssey-b3-1:1.0   "nginx -g 'daemon of…"   3 minutes ago   Exited (0) 2 seconds ago             codyssey-b3-1-web

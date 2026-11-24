@@ -1,0 +1,56 @@
+Time: 2026-11-24T10:33:30+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock network inspect codyssey-b3-1-net
+Exit: 0
+[
+    {
+        "Name": "codyssey-b3-1-net",
+        "Id": "90dde23781d9dc35be1b3e130846124afcc711142c1dcb65fea7b822878f5c9c",
+        "Created": "2026-11-24T19:29:29.353219567+09:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv4": true,
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "10.31.0.0/24",
+                    "Gateway": "10.31.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": false,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Options": {
+            "com.docker.network.bridge.name": "br-b3-1"
+        },
+        "Labels": {
+            "codyssey.lab": "b3-1"
+        },
+        "Containers": {
+            "79b237028bcb4a5add7f345894b7cbdd08f936a3e0e5f13eac36ee2bbcf9ed91": {
+                "Name": "codyssey-b3-1-web",
+                "EndpointID": "70677525416c271156424ebebc1e4a68ae31df903fac03afedbba314e583c442",
+                "MacAddress": "ca:31:e3:04:20:7e",
+                "IPv4Address": "10.31.0.10/24",
+                "IPv6Address": ""
+            }
+        },
+        "Status": {
+            "IPAM": {
+                "Subnets": {
+                    "10.31.0.0/24": {
+                        "IPsInUse": 4,
+                        "DynamicIPsAvailable": 252
+                    }
+                }
+            }
+        }
+    }
+]

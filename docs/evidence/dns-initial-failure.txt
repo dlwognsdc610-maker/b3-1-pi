@@ -1,0 +1,8 @@
+Time: 2026-11-24T10:31:53+00:00
+$ curl --noproxy '*' --silent --show-error --include --connect-timeout 5 --max-time 12 --write-out '
+LAB_STATUS=%{http_code}
+' https://bin-consequently-novelty-weapon.trycloudflare.com/
+Exit: 6
+
+LAB_STATUS=000
+curl: (6) Could not resolve host: bin-consequently-novelty-weapon.trycloudflare.com

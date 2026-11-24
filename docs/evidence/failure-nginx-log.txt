@@ -1,0 +1,26 @@
+Time: 2026-11-24T10:33:28+00:00
+$ sudo -n env DOCKER_BUILDKIT=0 /home/ljh/self-os/Codyssey/b3-1-pi/.tools/docker/docker --host unix:///run/codyssey-b3-1/docker.sock logs --tail=30 codyssey-b3-1-web
+Exit: 0
+127.0.0.1 - - [24/Nov/2026:10:31:00 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.23.0"
+10.31.0.1 - - [24/Nov/2026:10:31:43 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.14.1"
+127.0.0.1 - - [24/Nov/2026:10:31:48 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.23.0"
+10.31.0.1 - - [24/Nov/2026:10:31:48 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.14.1"
+10.31.0.1 - - [24/Nov/2026:10:31:53 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.14.1"
+127.0.0.1 - - [24/Nov/2026:10:33:23 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.23.0"
+10.31.0.1 - - [24/Nov/2026:10:33:23 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.14.1"
+10.31.0.1 - - [24/Nov/2026:10:33:23 +0000] "GET /health HTTP/1.1" 200 3 "-" "curl/8.14.1"
+10.31.0.1 - - [24/Nov/2026:10:33:24 +0000] "GET / HTTP/1.1" 200 1751 "-" "curl/8.14.1"
+2026/11/24 10:29:56 [notice] 1#1: using the "epoll" event method
+2026/11/24 10:29:56 [notice] 1#1: nginx/1.30.8
+2026/11/24 10:29:56 [notice] 1#1: built by gcc 15.2.0 (Alpine 15.2.0) 
+2026/11/24 10:29:56 [notice] 1#1: OS: Linux 6.18.34+rpt-rpi-v8
+2026/11/24 10:29:56 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1024:524288
+2026/11/24 10:29:56 [notice] 1#1: start worker processes
+2026/11/24 10:29:56 [notice] 1#1: start worker process 7
+2026/11/24 10:33:24 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/11/24 10:33:24 [notice] 7#7: gracefully shutting down
+2026/11/24 10:33:24 [notice] 7#7: exiting
+2026/11/24 10:33:24 [notice] 7#7: exit
+2026/11/24 10:33:25 [notice] 1#1: signal 17 (SIGCHLD) received from 7
+2026/11/24 10:33:25 [notice] 1#1: worker process 7 exited with code 0
+2026/11/24 10:33:25 [notice] 1#1: exit

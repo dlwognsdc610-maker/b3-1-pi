@@ -1,0 +1,15 @@
+Time: 2026-11-24T10:33:30+00:00
+$ curl --noproxy '*' --silent --show-error --include --connect-timeout 5 --max-time 12 --retry 2 --retry-all-errors --retry-delay 1 --retry-max-time 35 --write-out '
+LAB_STATUS=%{http_code}
+' http://127.0.0.1:18081/health
+Exit: 0
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 24 Nov 2026 10:33:30 GMT
+Content-Type: text/plain
+Content-Length: 3
+Connection: keep-alive
+
+OK
+
+LAB_STATUS=200
